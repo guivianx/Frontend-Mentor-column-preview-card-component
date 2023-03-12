@@ -1,0 +1,22 @@
+@media (max-width:770px) {
+    main {
+        display: block;
+        margin-top: 85px;
+    }
+
+    section {
+        padding: 30px;
+    }
+    article {
+        gap: 25px;
+    }
+
+    .section_sedans {
+        border-radius: 8px 8px 0px 0px ;
+    }
+    .section_luxury {
+        border-radius: 0px 0px 8px 8px;
+        margin-bottom: 85px;
+    }
+
+}

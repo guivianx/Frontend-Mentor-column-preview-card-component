@@ -1,0 +1,133 @@
+:root {
+
+    /*Tamanho da fonte 15px*/
+    --font-lexend: 'Lexend Deca', sans-serif;
+    --font-bigshoulders: 'Big Shoulders Display', 'cursive';
+
+    /* Principal*/
+
+    --Laranja-brilhante: hsl(31, 77%, 52%);
+    --Ciano-escuro: hsl(184, 100%, 22%);
+    --Ciano-muito-escuro: hsl(179, 100%, 13%);
+
+
+    /*Neutro */
+
+    /*parágrafos*/
+    --Branco-transparente: hsla(0, 0%, 100%, 0.75);
+
+    /*fundos, cabeçalhos, botões*/
+    --Cinza-muito-claro: hsl(0, 0%, 95%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    background-color: var(--Cinza-muito-claro);
+}
+
+main {
+    max-width: 1440px;
+    display: flex;
+    margin: auto;
+    
+}
+
+section {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 300px;
+    
+
+}
+
+section img {
+    width: 64px;
+}
+
+section h1 {
+    font-family: var(--font-bigshoulders);
+    color: var(--Cinza-muito-claro);
+    font-size: 2.5em;
+}
+section p {
+    font-family: var(--font-lexend);
+    color: var(--Branco-transparente);
+    font-size: 15px;
+    line-height: 23px;
+
+}
+section div {
+    background-color: var(--Cinza-muito-claro);
+    font-family: var(--font-lexend);
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    width: 145px;
+    height: 45px;
+    cursor: pointer;
+    transition: .1s;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+}
+
+
+
+.section_sedans {
+    background-color: var(--Laranja-brilhante);
+    border-radius: 8px 0px 0px 8px;
+}
+.section_sedans div {
+    color: var(--Laranja-brilhante);
+    text-align: center;
+ 
+}
+.section_sedans div:hover {
+    background-color: transparent;
+    border: 2px solid var(--Cinza-muito-claro);
+    color: var(--Cinza-muito-claro);
+    text-align: center;
+}
+
+
+
+.section_suvs {
+    background-color: var(--Ciano-escuro);
+}
+.section_suvs div {
+    color: var(--Ciano-escuro);
+}
+.section_suvs div:hover {
+    background-color: transparent;
+    border: 2px solid var(--Cinza-muito-claro);
+    color: var(--Cinza-muito-claro);
+    text-align: center;
+}
+
+
+
+.section_luxury {
+    background-color: var(--Ciano-muito-escuro);
+    border-radius: 0px 8px 8px 0px;
+}
+.section_luxury div {
+    color: var(--Ciano-muito-escuro);
+}
+.section_luxury div:hover {
+    background-color: transparent;
+    border: 2px solid var(--Cinza-muito-claro);
+    color: var(--Cinza-muito-claro);
+    text-align: center;
+}
